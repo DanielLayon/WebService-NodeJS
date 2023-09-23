@@ -1,0 +1,197 @@
+{
+  "TipoProfissional": "3",                              //OK
+  "Vitimologia": 0,                                     //OK
+  "RDO": 0,                                             //OK
+  "CNPJMatrizAnuente": "11496705000168",                //OK INFO FIXA
+  "TelefoneSolicitante": "4734045300",                  //OK INFO FIXA
+  "EmailSolicitante": "atendimento@noxgr.com.br",       //OK INFO FIXA
+  "Profissional": {
+    "Nome": "JOELSON SOARES MATIAS",                    //OK
+    "Apelido": "",                                      //OK
+    "Sexo": "1",                                        //OK
+    "DataNascimento": "01/04/1984",                     //OK
+    "CPF": "00047677139",                               //OK
+    "RG": "4345908",                                    //OK
+    "SiglaUFEmissaoRG": "GO",                           //NOTOK CAMPO NÃO EXISTE                  
+    "DataExpedicaoRG": "23/06/1999",                    //NOTOK CAMPO NÃO EXISTE
+    "FotoProfissional": "",                             //OK
+    "FotoCNH": "",                                      //OK
+    "CNHProfissional": {                          
+      "NumeroCNH": "02372074080",                       //OK
+      "SiglaUFCNHEmissao": "GO",                        //OK
+      "CodigoCidadeEmissaoCNH": "5211503",              //NOTOK CAMPO NÃO EXISTE
+      "DataVencimentoCNH": "19/07/2031",                //OK
+      "ProntuarioCNH": "",                              //OK
+      "NumeroSegurancaCNH": "55030643145",              //OK
+      "Categoria": "AE"                                 //OK
+    },
+    "QuantidadeFilhos": "",                             //OK
+    "MOPP": "2",                                        //OK
+    "NomeMae": "NEIDE SOARES MATIAS",                   //OK
+    "NomePai": "JOEL RODRIGUES MATIAS",                 //OK
+    "TelefoneResidencial": "06499220516",               //OK
+    "TelefoneCelular": "",                              //OK
+    "TelefoneAdicional": "",                            //OK
+    "EMail": "",                                        //OK
+    "Enderecos": [
+      {
+        "Cep": "75523180",                              //OK              
+        "Tipo": "0",                                    //OK
+        "Numero": "866",                                //OK
+        "Logradouro": "RUA CLEPINO ANTONIO ARAUJO",     //OK
+        "Complemento": "",                              //OK
+        "Bairro": "ALTO DA BOA VISTA",                  //OK
+        "PontoReferencia": "",                          //OK
+        "SiglaEstado": "GO",                            //OK
+        "CodigoCidade": "5211503",                      //OK
+        "CodigoIBGE": "5211503"                         //OK
+      }
+    ],
+    "Referencias": [
+      {
+        "TipoReferencia": "0",                          //OK
+        "Nome": "A INFORMAR",                           //OK
+        "Telefone": "99999999999",                      //OK
+        "Celular": "",                                  //OK
+        "Observacao": "A INFORMAR"                      //OK
+      }
+    ]
+  },
+  "Veiculos": [
+    
+  ]
+}
+
+
+
+//CAMPOS OBRIGATÓRIO SOLICITADOS PELA APISUL
+
+//#PESQUISA_CONDUTOR
+{
+  "NOME":               "OBRIGATÓRIO", 
+  "SEXO":               "OBRIGATÓRIO", 
+  "DATA_NASCIMENTO":    "OBRIGATÓRIO",
+  "CPF":                "OBRIGATÓRIO",
+  "RG":                 "OBRIGATÓRIO",
+  "SIGLAUFEMISSAO":     "OBRIGATÓRIO", //JÁ EXISTE E VAMOS USAR O ORGÃO DE EMISSAO
+  "DATAEXPEDIÇÃORG":    "OBRIGATÓRIO", //JÁ EXISTE 
+  "NOME_MAE":           "OBRIGATÓRIO",
+  "NOME_PAI":           "OBRIGATÓRIO",
+  "TELEFONE_RESIDENCIA":"OBRIGATÓRIO", //
+
+  "CNH":{
+    "NUMERO_CNH":       "OBRIGATÓRIO",
+    "UF_CNH":           "OBRIGATÓRIO",
+    "CÓDIGO_CIDADE":    "OBRIGATÓRIO", //OU USAR O CÓDIGO QUE O CONDUTOR MORA OU NÃO ENVIAMOS NADA
+    "DATA_VECTO":       "OBRIGATÓRIO",
+    "NUMERO_SEG_CNH":   "OBRIGATÓRIO",
+    "CATEGORIA":        "OBRIGATÓRIO"
+  },
+  
+  "ENDERECO":{
+    "CEP":              "OBRIGATÓRIO",
+    "TIPO":             "OBRIGATÓRIO",
+    "NUMERO":           "OBRIGATÓRIO",
+    "LOGRADOURO":       "OBRIGATÓRIO",
+    "BAIRRO":           "OBRIGATÓRIO",
+    "SIGLA_ESTADO":     "OBRIGATÓRIO",
+    "CODIGO_IBGE":      "OBRIGATÓRIO"
+  },
+}
+
+
+//#PESQUISA_MOTORISTA_COM_CONJUNTO
+{
+  "NOME":                         "OBRIGATÓRIO", 
+  "SEXO":                         "OBRIGATÓRIO", 
+  "DATA_NASCIMENTO":              "OBRIGATÓRIO",
+  "CPF":                          "OBRIGATÓRIO",
+  "RG":                           "OBRIGATÓRIO",
+  "SIGLAUFEMISSAO":               "OBRIGATÓRIO", //JÁ EXISTE E VAMOS USAR O ORGÃO DE EMISSAO
+  "DATAEXPEDIÇÃORG":              "OBRIGATÓRIO", //JÁ EXISTE 
+  "NOME_MAE":                     "OBRIGATÓRIO",
+  "NOME_PAI":                     "OBRIGATÓRIO",
+  "TELEFONE_RESIDENCIA":          "OBRIGATÓRIO",
+
+  "CNH":{
+    "NUMERO_CNH":                 "OBRIGATÓRIO",
+    "UF_CNH":                     "OBRIGATÓRIO",
+    "CÓDIGO_CIDADE":              "OBRIGATÓRIO", //OU USAR O CÓDIGO QUE O CONDUTOR MORA OU NÃO ENVIAMOS NADA
+    "DATA_VECTO":                 "OBRIGATÓRIO",
+    "NUMERO_SEG_CNH":             "OBRIGATÓRIO",
+    "CATEGORIA":                  "OBRIGATÓRIO"
+  },
+  
+  "ENDERECO":{
+    "CEP":                        "OBRIGATÓRIO",
+    "TIPO":                       "OBRIGATÓRIO",
+    "NUMERO":                     "OBRIGATÓRIO",
+    "LOGRADOURO":                 "OBRIGATÓRIO",
+    "BAIRRO":                     "OBRIGATÓRIO",
+    "SIGLA_ESTADO":               "OBRIGATÓRIO",
+    "CODIGO_IBGE":                "OBRIGATÓRIO"
+  },
+
+  "VEICULO": {
+    {
+      "ANO_FABRICAÇÃO":           "OBRIGATÓRIO",
+      "ANO_MODELO":               "OBRIGATÓRIO",
+      "CHASSI":                   "OBRIGATÓRIO",
+      "COR":                      "OBRIGATÓRIO",
+      "MARCA":                    "OBRIGATÓRIO",
+      "MODELO":                   "OBRIGATÓRIO",
+      "RENAVAM":                  "OBRIGATÓRIO",
+      "PLACA":                    "OBRIGATÓRIO",
+      "RNTRC":                    "OBRIGATÓRIO",
+      "ESTADO":                   "OBRIGATÓRIO",
+
+      "PROPRIETARIO":{  //PROPRIETARIO OBRIGATORIO
+        "TipoProprietario":      "OBRIGATÓRIO",
+        "CPFCNPJ":               "OBRIGATÓRIO",
+        "Nome":                  "OBRIGATÓRIO",
+        "Telefone":              "OBRIGATÓRIO",
+        "Celular":               "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+        "CodigoCidade":          "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+        "SiglaEstado":           "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+        "TipoResidencia":        "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+        "Cep":                   "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+        "Logradouro":            "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+        "Numero":                "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+        "Bairro":                "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+      }
+    }
+  }
+}
+
+
+
+//#PESQUISA_VEICULO
+{
+  "ANO_FABRICAÇÃO":           "OBRIGATÓRIO",
+  "ANO_MODELO":               "OBRIGATÓRIO",
+  "CHASSI":                   "OBRIGATÓRIO",
+  "COR":                      "OBRIGATÓRIO",
+  "MARCA":                    "OBRIGATÓRIO",
+  "MODELO":                   "OBRIGATÓRIO",
+  "RENAVAM":                  "OBRIGATÓRIO",
+  "PLACA":                    "OBRIGATÓRIO",
+  "RNTRC":                    "OBRIGATÓRIO",
+  "ESTADO":                   "OBRIGATÓRIO",
+
+  "PROPRIETARIO":{  //PROPRIETARIO OBRIGATORIO
+    "TipoProprietario":      "OBRIGATÓRIO",
+    "CPFCNPJ":               "OBRIGATÓRIO",
+    "Nome":                  "OBRIGATÓRIO",
+    "Telefone":              "OBRIGATÓRIO",
+    "Celular":               "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+    "CodigoCidade":          "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+    "SiglaEstado":           "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+    "TipoResidencia":        "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+    "Cep":                   "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+    "Logradouro":            "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+    "Numero":                "OBRIGATÓRIO", //NÃO CRIAREMOS OS CAMPOS
+    "Bairro":                "OBRIGATÓRIO" //NÃO CRIAREMOS OS CAMPOS
+  }
+}
+
+
